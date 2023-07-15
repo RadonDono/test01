@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop2.adminMenu">
+    <children>
+        <Button fx:id="foodButton" layoutX="380.0" layoutY="50.0" mnemonicParsing="false" onAction="#food" prefHeight="50.0" prefWidth="90.0" text="Foods" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="90.0" />
+        <Button fx:id="orderButton" layoutX="380.0" layoutY="120.0" mnemonicParsing="false" onAction="#orders" prefHeight="50.0" prefWidth="90.0" text="Orders" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="160.0" />
+        <Button fx:id="commentButton" layoutX="380.0" layoutY="190.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="Comments" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="230.0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="editButton" layoutX="380.0" layoutY="260.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="90.0" text="edit" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="300.0" />
+        <ScrollPane layoutX="42.0" layoutY="26.0" prefHeight="445.0" prefWidth="308.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="30.0">
+         <content>
+            <ListView fx:id="foods" prefHeight="534.0" prefWidth="286.0" />
+         </content>
+        </ScrollPane>
+        <ChoiceBox fx:id="restaurants" layoutX="375.0" layoutY="30.0" onAction="#addRestaurant" prefHeight="40.0" prefWidth="100.0" AnchorPane.topAnchor="30.0" />
+        <Button fx:id="logoutButton" layoutX="380.0" layoutY="370.0" mnemonicParsing="false" onAction="#welcomeMenu" prefHeight="50.0" prefWidth="90.0" text="LogOut" />
+    </children>
+</AnchorPane>

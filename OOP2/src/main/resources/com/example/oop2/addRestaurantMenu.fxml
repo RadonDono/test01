@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop2.Addrestaurancontroller">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="140.0" layoutY="75.0" prefHeight="39.0" prefWidth="67.0" text="Name:" />
+      <TextField fx:id="nametext" layoutX="235.0" layoutY="75.0" prefHeight="39.0" prefWidth="123.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="addbutton" layoutX="216.0" layoutY="321.0" mnemonicParsing="false" onAction="#add" prefHeight="39.0" prefWidth="67.0" text="Add" AnchorPane.topAnchor="321.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER_RIGHT" layoutX="102.0" layoutY="155.0" prefHeight="39.0" prefWidth="106.0" text="FoodType:" />
+      <TextField fx:id="foodtypetext" layoutX="236.0" layoutY="155.0" prefHeight="39.0" prefWidth="123.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="140.0" layoutY="230.0" prefHeight="39.0" prefWidth="67.0" text="Location" />
+      <TextField fx:id="loctext" layoutX="235.0" layoutY="230.0" prefHeight="39.0" prefWidth="123.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="exitbutton" layoutX="217.0" layoutY="384.0" mnemonicParsing="false" onAction="#exit" prefHeight="39.0" prefWidth="67.0" text="exit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
